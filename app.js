@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
-const path = require("path"); // if we start server from other than Resume_Builder ... then it should get views 
+const path = require("path"); 
 const port = 8080;
 
 //middlwares
 app.set("view engine", "ejs"); // for ejs
-app.use(express.static(path.join(__dirname, "/public"))); //  to join public files css, js
+app.use(express.static(path.join(__dirname, "/public"))); 
 app.set("views", path.join(__dirname, "/views")); 
 
 
